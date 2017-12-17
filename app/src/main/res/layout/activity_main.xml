@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#02B3E4"
+    tools:context="com.example.android.helloandroid.MainActivity">
+
+    <ImageView
+        android:id="@+id/bg_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/bg_3"/>
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="170dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="false"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/udacity_trans_2_resized"/>
+    <ImageView
+        android:id="@+id/bar_1"
+        android:layout_width="150dp"
+        android:layout_height="5dp"
+        android:layout_alignBottom="@id/line_01"
+        android:layout_below="@id/logo"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:background="#02B3E4"/>
+    <ImageView
+        android:id="@+id/bar_2"
+        android:layout_width="120dp"
+        android:layout_height="5dp"
+        android:layout_alignBottom="@id/line_02"
+        android:layout_below="@id/bar_1"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:background="#02B3E4" />
+    <ImageView
+        android:id="@+id/bar_3"
+        android:layout_width="90dp"
+        android:layout_height="5dp"
+        android:layout_alignBottom="@id/line_03"
+        android:layout_below="@id/bar_2"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:background="#02B3E4" />
+    <ImageView
+        android:id="@+id/bar_4"
+        android:layout_width="60dp"
+        android:layout_height="5dp"
+        android:layout_alignBottom="@id/line_04"
+        android:layout_below="@id/bar_3"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:background="#02B3E4" />
+    <ImageView
+        android:id="@+id/bar_5"
+        android:layout_width="30dp"
+        android:layout_height="5dp"
+        android:layout_alignBottom="@id/line_05"
+        android:layout_below="@id/bar_4"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:background="#02B3E4" />
+
+    <TextView
+        android:id="@+id/line_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_toEndOf="@id/bar_1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="  Udacity"
+        android:textColor="#777777" />
+
+    <TextView
+        android:id="@+id/line_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_01"
+        android:layout_toEndOf="@id/bar_2"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="  2465 Latham St"
+        android:textColor="#777777"/>
+
+    <TextView
+        android:id="@+id/line_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_02"
+        android:layout_toEndOf="@id/bar_3"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="  Mountain View"
+        android:textColor="#777777"/>
+    <TextView
+        android:id="@+id/line_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_03"
+        android:layout_toEndOf="@id/bar_4"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="  CA 94043"
+        android:textColor="#777777" />
+    <TextView
+        android:id="@+id/line_05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_04"
+        android:layout_toEndOf="@id/bar_5"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="  650-555-5555"
+        android:textColor="#777777" />
+
+</RelativeLayout>
